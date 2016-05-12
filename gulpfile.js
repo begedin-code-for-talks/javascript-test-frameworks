@@ -21,3 +21,16 @@ gulp.task('watch', ['build'], function () {
 });
 
 gulp.task('default', ['watch', 'webserver']);
+
+
+var protractor = require("gulp-protractor").protractor;
+
+
+gulp.task('test', ['webserver'], function () {
+	gulp.src(["./src/tests/*.js"])
+    .pipe(protractor({
+      configFile: "conf.js",
+      args: ['--baseUrl', 'http://localhost:8080']
+    }))
+	.on('error', function(e) { throw e })
+});
