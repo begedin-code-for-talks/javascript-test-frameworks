@@ -14,6 +14,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",
     "gulp-webserver": "^0.9.1",
+    "nightwatch": "^0.8.18",
     "vinyl-source-stream": "^1.1.0"
   }
 }
