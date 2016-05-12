@@ -1,5 +1,4 @@
-const sum = require('sum');
-const assert = require('chai').assert;
+const sum = require('../src/sum');
 
 describe('sum(a, b)', function () {
   it('returns a sum of two numbers', () => {

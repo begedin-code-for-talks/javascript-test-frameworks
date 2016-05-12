@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'browserify'],
+    frameworks: ['mocha', 'chai', 'browserify'],
 
 
     // list of files / patterns to load in the browser
@@ -23,14 +23,6 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
     ],
-
-    client: {
-      mocha: {
-        reporter: 'html', // change Karma's debug.html to the mocha web reporter
-        ui: 'tdd'
-      }
-    },
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
